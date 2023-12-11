@@ -43,7 +43,7 @@ const Login = () => {
               color: "rgba(43, 54, 116, 1)",
             }}
           >
-            Activet Life
+            Vitaran
           </h1>
         </div>
         <TextField

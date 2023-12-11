@@ -8,7 +8,7 @@ export function PieChart(props) {
   const data = {
     datasets: [
       {
-        label:["product","Sales"],
+        label:["Total Application","Total Verified"],
         data: [200,500],
         backgroundColor: ["rgba(106, 210, 255, 1)", "rgba(67, 24, 255, 1)"],
         

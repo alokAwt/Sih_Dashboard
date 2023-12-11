@@ -5,6 +5,9 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
+import AddIcon from "@mui/icons-material/Add";
+import ListAltIcon from "@mui/icons-material/ListAlt";
+import SchoolIcon from "@mui/icons-material/School"; // Import the new icon for "College"
 import { Link } from "react-router-dom";
 import "./Home.css";
 
@@ -31,7 +34,7 @@ const SidebarDash = () => {
                 marginTop: 45,
               }}
             >
-              Activet Life
+              Vitaran
             </h1>
           </div>
           <hr style={{ marginTop: 50 }}></hr>
@@ -39,11 +42,7 @@ const SidebarDash = () => {
             component={<Link to="/Dashboard" />}
             icon={
               <HomeOutlinedIcon
-                style={{
-                  color: "rgba(67, 24, 255, 1)",
-                  height: 28,
-                  width: 26,
-                }}
+                style={{ color: "rgba(67, 24, 255, 1)", height: 28, width: 26 }}
               />
             }
             className={activeMenuItem === "/Dashboard" ? "active" : ""}
@@ -53,7 +52,7 @@ const SidebarDash = () => {
               color: "rgba(43, 54, 116, 1)",
               backgroundColor:
                 activeMenuItem === "/Dashboard"
-                  ? "rgba(67, 24, 255, 0.1)" // Active background color
+                  ? "rgba(67, 24, 255, 0.1)"
                   : "transparent",
             }}
           >
@@ -63,11 +62,7 @@ const SidebarDash = () => {
             component={<Link to="/Product" />}
             icon={
               <ShoppingCartOutlinedIcon
-                style={{
-                  color: "rgba(67, 24, 255, 1)",
-                  height: 28,
-                  width: 26,
-                }}
+                style={{ color: "rgba(67, 24, 255, 1)", height: 28, width: 26 }}
               />
             }
             className={activeMenuItem === "/Product" ? "active" : ""}
@@ -77,35 +72,91 @@ const SidebarDash = () => {
               color: "rgba(43, 54, 116, 1)",
               backgroundColor:
                 activeMenuItem === "/Product"
-                  ? "rgba(67, 24, 255, 0.1)" // Active background color
+                  ? "rgba(67, 24, 255, 0.1)"
                   : "transparent",
             }}
           >
-            Products
+            Application
           </MenuItem>
           <MenuItem
-            component={<Link to="/users" />}
+            component={<Link to="/details" />}
             icon={
               <PeopleOutlinedIcon
-                style={{
-                  color: "rgba(67, 24, 255, 1)",
-                  height: 28,
-                  width: 26,
-                }}
+                style={{ color: "rgba(67, 24, 255, 1)", height: 28, width: 26 }}
               />
             }
-            className={activeMenuItem === "/users" ? "active" : ""}
+            className={activeMenuItem === "/details" ? "active" : ""}
             style={{
               fontSize: 16,
               fontWeight: "700",
               color: "rgba(43, 54, 116, 1)",
               backgroundColor:
-                activeMenuItem === "/users"
-                  ? "rgba(67, 24, 255, 0.1)" // Active background color
+                activeMenuItem === "/details"
+                  ? "rgba(67, 24, 255, 0.1)"
                   : "transparent",
             }}
           >
-            Users
+            Scholarship
+          </MenuItem>
+          <MenuItem
+            component={<Link to="/add" />}
+            icon={
+              <AddIcon
+                style={{ color: "rgba(67, 24, 255, 1)", height: 28, width: 26 }}
+              />
+            }
+            className={activeMenuItem === "/add" ? "active" : ""}
+            style={{
+              fontSize: 16,
+              fontWeight: "700",
+              color: "rgba(43, 54, 116, 1)",
+              backgroundColor:
+                activeMenuItem === "/add"
+                  ? "rgba(67, 24, 255, 0.1)"
+                  : "transparent",
+            }}
+          >
+            Add Scholarship
+          </MenuItem>
+          <MenuItem
+            component={<Link to="/Api" />}
+            icon={
+              <ListAltIcon
+                style={{ color: "rgba(67, 24, 255, 1)", height: 28, width: 26 }}
+              />
+            }
+            className={activeMenuItem === "/Api" ? "active" : ""}
+            style={{
+              fontSize: 16,
+              fontWeight: "700",
+              color: "rgba(43, 54, 116, 1)",
+              backgroundColor:
+                activeMenuItem === "/Api"
+                  ? "rgba(67, 24, 255, 0.1)"
+                  : "transparent",
+            }}
+          >
+            API List
+          </MenuItem>
+          <MenuItem
+            component={<Link to="/College" />} // Add the route for "College"
+            icon={
+              <SchoolIcon
+                style={{ color: "rgba(67, 24, 255, 1)", height: 28, width: 26 }}
+              />
+            }
+            className={activeMenuItem === "/College" ? "active" : ""}
+            style={{
+              fontSize: 16,
+              fontWeight: "700",
+              color: "rgba(43, 54, 116, 1)",
+              backgroundColor:
+                activeMenuItem === "/College"
+                  ? "rgba(67, 24, 255, 0.1)"
+                  : "transparent",
+            }}
+          >
+            College
           </MenuItem>
           <div style={{ flex: 1 }}></div>
           <div
@@ -115,7 +166,7 @@ const SidebarDash = () => {
             }}
           >
             <MenuItem
-              component={<Link to="/" />}
+              component={<Link to="/College" />}
               icon={
                 <ExitToAppOutlinedIcon
                   style={{
@@ -125,14 +176,14 @@ const SidebarDash = () => {
                   }}
                 />
               }
-              className={activeMenuItem === "/" ? "active" : ""}
+              className={activeMenuItem === "/College" ? "active" : ""}
               style={{
                 fontSize: 20,
                 fontWeight: "700",
                 color: "rgba(43, 54, 116, 1)",
                 backgroundColor:
                   activeMenuItem === "/"
-                    ? "rgba(67, 24, 255, 0.1)" // Active background color
+                    ? "rgba(67, 24, 255, 0.1)"
                     : "transparent",
               }}
             >

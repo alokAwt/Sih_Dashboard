@@ -13,6 +13,7 @@ import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import ProductModel from "../Model/ProductModel";
 import EditProduct from "../Model/EditProduct";
 import AlertDialog from "../Model/AlertDialog";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles({
   finalRow: {
@@ -34,6 +35,7 @@ const rows = [
 ];
 
 export default function ProductTable(page) {
+  const navigate=useNavigate()
   const classes = useStyles();
   let totalCost = 0;
   const [open, setOpen] = useState(false);
@@ -109,7 +111,7 @@ export default function ProductTable(page) {
             color: "rgba(43, 54, 116, 1)",
           }}
         >
-          Product List
+          Application List
         </h3>
         <img
           onClick={openADDProduct}
@@ -224,6 +226,18 @@ export default function ProductTable(page) {
                   color: "rgba(43, 54, 116, 1)",
                   textAlign: "center",
                 }}
+              >
+                {row.qty}
+              </TableCell>
+              <TableCell
+                align="center"
+                style={{
+                  fontWeight: "700",
+                  fontSize: 14,
+                  color: "rgba(43, 54, 116, 1)",
+                  textAlign: "center",
+                }}
+                onClick={()=>navigate("/doc")}
               >
                 {row.qty}
               </TableCell>

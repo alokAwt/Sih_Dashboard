@@ -7,7 +7,7 @@ import Add from "../Images/Add.png";
 import Sidebar from "./SideBar";
 import UserTable from "../Components/Table/UserTable";
 
-const Users = () => {
+const College= () => {
   return (
     <div className="conatiner mb-5">
       <div className="row">
@@ -15,7 +15,7 @@ const Users = () => {
           <Sidebar></Sidebar>
         </div>
         <div className="col-10 mt-5">
-          <Headers page="Users" ></Headers>
+          <Headers page="College" ></Headers>
           <div className="row">
             <div className="col-12">
               <div
@@ -46,4 +46,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default College;

@@ -90,7 +90,7 @@ export default function UserTable(page) {
         onConfirm={handleDeleteConfirm}
         onCancel={handleDeleteCancel}
       />
-   
+
       <UserModel open={editModelOpen} close={closeEditModel}></UserModel>
       <div
         style={{
@@ -110,7 +110,7 @@ export default function UserTable(page) {
             color: "rgba(43, 54, 116, 1)",
           }}
         >
-          User List
+          College Application List
         </h3>
         <img onClick={fun} style={{ marginRight: 20 }} src={Add}></img>
       </div>
@@ -244,7 +244,9 @@ export default function UserTable(page) {
                   textAlign: "center",
                 }}
               >
-                <DeleteOutlineIcon onClick={() => OpenProduct(row)}></DeleteOutlineIcon>
+                <DeleteOutlineIcon
+                  onClick={() => OpenProduct(row)}
+                ></DeleteOutlineIcon>
               </TableCell>
             </TableRow>
           ))}

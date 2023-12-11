@@ -86,7 +86,7 @@ const Home = () => {
                         color: "rgba(43, 54, 116, 1)",
                       }}
                     >
-                      Your Earning
+                      Application
                     </h3>
                     <h3
                       style={{
@@ -119,7 +119,7 @@ const Home = () => {
                         color: "rgba(43, 54, 116, 1)",
                       }}
                     >
-                      Your Selling
+                      Total Verfied
                     </h3>
                     <h3
                       style={{

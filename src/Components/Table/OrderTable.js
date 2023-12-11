@@ -68,7 +68,7 @@ export default function Order(page) {
             color: "rgba(43, 54, 116, 1)",
           }}
         >
-          Order List
+          Recent Application
         </h3>
         <img onClick={fun} style={{ marginRight: 20 }} src={Add}></img>
       </div>
